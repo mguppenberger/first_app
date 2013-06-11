@@ -9,6 +9,11 @@ group :development do
   gem 'sqlite3', '1.3.7'
 end
 
+group :production do
+# Use PostgreSQL for production on heroku
+  gem 'pg', '0.15.1'
+end
+
 # Use SCSS for stylesheets
 gem 'sass-rails',   '4.0.0.rc1'
 
